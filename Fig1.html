@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude vs. X</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--navbar-->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white mb-0 pb-0">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><h2>Latitude</h2></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse  justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Plots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Fig1.html">Figure 1</a></li>
+                            <li><a class="dropdown-item" href="Fig2.html">Figure 2</a></li>
+                            <li><a class="dropdown-item" href="Fig3.html">Figure 3</a></li>
+                            <li><a class="dropdown-item" href="Fig4.html">Figure 4</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Comparison</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Resources/cities.csv">Data</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            
+        </div>
+
+        <!--main page-->
+        <div class="row">
+            <!--left side-->
+
+            <div class="col-8">
+                <section class="ms-5">
+                <h3>Summary: Latitude vs. X</h3>
+                <img src="Resources/assets/images/Fig1.png" height=200 width=200 id="mainFigure" alt="figure1">
+                <p> The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                    <br><br>
+                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+                    This site provide the source data and visualizations created as part of the analysis, 
+                    as well as explanations and descriptions of any trends and correlations witnessed.
+                </p>
+                </section>
+            </div>
+
+            <!--right side-->
+
+            <div class="col-3 col-sm-4">
+                <section class="me-5">
+                <h3>Visualizations</h3>
+                <figure>
+                    <img src="Resources/assets/images/Fig1.png" height=150 width=150 alt="figure1">
+                    <img src="Resources/assets/images/Fig2.png" height=150 width=150 alt="figure2">
+                    <img src="Resources/assets/images/Fig3.png" height=150 width=150 alt="figure3">
+                    <img src="Resources/assets/images/Fig4.png" height=150 width=150 alt="figure4">  
+                </figure>
+                </section>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
