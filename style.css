@@ -46,6 +46,14 @@ figcaption {
     text-align: center;
 }
 
+#figDescription {
+    margin: 10px;
+    padding: 30px;
+}
+
+#boxColor {
+    border: 1px solid darkcyan;
+}
 #mainFigure {
     float: left;
     margin-right: 500 px;
